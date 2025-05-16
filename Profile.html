@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backstage Pass</title>
+</head>
+<body>
+    <style>
+        
+        .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.navbar a {
+    background-color: #d2d4d6;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border-radius: 12px; /* for rounded shapes */
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #18C9FA;
+    transform: scale(1.05);
+}
+    
+        a:hover {
+            background-color: #18C9FA;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        a{
+            text-align: center;
+            color: black;
+            padding: 0%;
+            shape-margin: 0cap;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .circle-image{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%; 
+            object-fit: cover; 
+             border: 3px solid #333;
+        }
+        ul{
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+        }
+        ul li{
+          text-decoration: none;
+          margin:0 0.775em 0 0.75em;
+        }
+      
+        ul :hover a{
+          color: #18C9FA;
+          font-size: medium;
+          font: 100;
+        }
+        ul:hover a:hover{
+          color: black;
+          box-shadow: 0 2px 0 0 currentColor;
+        }
+        a{
+          text-decoration: none;
+          color: black;
+          text-transform: none;
+          transition: 0.25s ease;
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .footer {
+            position: fixed;
+            padding:10px 0;
+            color: rgb(14, 13, 13);
+            text-align: center;
+            padding: 10px 0;
+            position: bottom;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            transform: translateX(-50%);
+            left: 89%;  
+        }
+        .footer-container {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+ 
+    padding: 10px 20px; /* Optional */
+
+}
+
+.footer-left, .footer-right {
+    width: 45%;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+a{
+    font-family: itim;
+}
+.gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      justify-items: center;
+      padding: 40px;
+    }
+
+    .artist {
+      text-align: center;
+    }
+
+    .artist img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%; /* makes the image round */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .artist p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    </style>
+
+     
+      
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About us </a>
+        <a href="theteam.html">The team </a>
+        <a href="event.html">Event</a>
+        <a href="ArtistProfile.html">Artists Profile </a>
+        <a href="contractus.html">Contract Us </a>
+        </nav>
+       <br>
+       <br>
+      
+         <ul>
+          <li><a href="Profile.html"> Profile</a></li>
+           <li><a href="artistprofile1.html"> Artist Profile</a></li>
+           <li><a href="bookings.html">  Bookings</a></li>
+          </ul>
+      
+
+    <br>
+    <br>
+    <div class="gallery">
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/black coffe.jpg" alt="Black Coffee">
+          <p>Black Coffee</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/maphorisa.jpg" alt="DJ Maphorisa">
+          <p>DJ Maphorisa</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/nadia nakai.jpg" alt="Nadia Nakai">
+          <p>Nadia Nakai</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/sykes.jpg" alt="Sykes">
+          <p>Sykes</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/tyla.jpg" alt="Tyla">
+          <p>Typa</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/kamo mphela.jpg" alt="Kamo Mphela">
+          <p>Kamo Mphela</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/zee nxumalo.jpg" alt="Zee Nxumalo">
+          <p>Zee Nxumalo</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/shakes&les.jpg" alt=" Shakes & Les">
+          <p>Shakes & Les</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/jazziq.jpg" alt="JazziQ">
+          <p>JazziQ</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/kelvin momo.jpg" alt="Kelvin Momo">
+          <p>Kelvin Momo</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/mdu aka trp.jpg" alt="Mdu aka trp">
+          <p>Mdu aka trp</p>
+        </div>
+        <div class="artist">
+          <img src="BACKSTAGE PICTURES/maglea doe boy.jpg" alt="Maglera Doe Boy">
+          <p>Maglera Doe Boy</p>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<div class="footer-container">
+    <p class="footer-left">
+    51 Anso Road
+    <br>
+    Montana
+    <br>
+    Pretoria
+    <br>
+    Gauteng 0159
+</p>
+
+     <p class="footer-right"> Contract: 
+    <br>
+    Email:
+    <br>
+    Legal Team:
+    <br>
+    FAQ'S
+
+</p>
+</div>
+
+<div class="footer">
+    <p>&copy; Khumalo Valueable(Pty)Ltd 2025</p>
+</div>
+</html>

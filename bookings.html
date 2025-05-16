@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backstage Pass</title>
+</head>
+<body>
+    <style>
+        
+    .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.navbar a {
+    background-color: #d2d4d6;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border-radius: 32px; /* for rounded shapes */
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #18C9FA;
+    transform: scale(1.05);
+}
+    
+        a:hover {
+            background-color: #18C9FA;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 32px;
+            text-align: center;
+        }
+        a{
+            text-align: center;
+            color: black;
+            padding: 0%;
+            shape-margin: 0cap;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .footer {
+            position: fixed;
+            padding:10px 0;
+            color: rgb(14, 13, 13);
+            text-align: center;
+            padding: 10px 0;
+            position: bottom;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            transform: translateX(-50%);
+            left: 89%;  
+        }
+        .footer-container {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 10px 20px; /* Optional */
+
+}
+
+.footer-left, .footer-right {
+    width: 45%;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.form-box {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .submit-btn {
+      background-color: #000;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #444;
+    }
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      overflow-y: auto;
+    }
+
+    </style>
+
+     
+      
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About us </a>
+        <a href="theteam.html">The team </a>
+        <a href="event.html">Event</a>
+        <a href="ArtistProfile.html">Artists Profile </a>
+        <a href="contractus.html">Contract Us </a>
+    </nav>
+    <br>
+    <br>
+    <a href="Profile.html"> Profile</a>
+    <a href="artistprofile1.html"> Artist Profile</a>
+    <a href="bookings.html">  Bookings</a>
+    <br>
+    <div class="form-box">
+        <h2>Book an Artist</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Your Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="example@email.com" required />
+          </div>
+    
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+27..." required />
+          </div>
+    
+          <div class="form-group">
+            <label for="bookingFor">Booking For</label>
+            <select id="bookingFor" required>
+              <option value="">-- Select --</option>
+              <option value="event">Event</option>
+              <option value="artist">Artist</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="artistName">Artist Name (if applicable)</label>
+            <input type="text" id="artistName" placeholder="e.g. DJ Maphorisa" />
+          </div>
+    
+          <div class="form-group">
+            <label for="eventDate">Event Date</label>
+            <input type="date" id="eventDate" required />
+          </div>
+    
+          <div class="form-group">
+            <label for="message">Additional Information</label>
+            <textarea id="message" placeholder="Write any special requests or event details..."></textarea>
+          </div>
+    
+          <button type="submit" class="submit-btn">Submit Booking</button>
+        </form>
+      </div>
+    
+</body>
+<div class="footer-container">
+    <p class="footer-left">
+    51 Anso Road
+    <br>
+    Montana
+    <br>
+    Pretoria
+    <br>
+    Gauteng 0159
+</p>
+
+     <p class="footer-right"> Contract: 
+    <br>
+    Email:
+    <br>
+    Legal Team:
+    <br>
+    FAQ'S
+
+</p>
+</div>
+
+<div class="footer">
+    <p>&copy; Khumalo Valueable(Pty)Ltd 2025</p>
+</div>
+</html>

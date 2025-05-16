@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backstage Pass</title>
+</head>
+<body>
+    <style>
+        
+        .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.navbar a {
+    background-color: #d2d4d6;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border-radius: 12px; /* for rounded shapes */
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #18C9FA;
+    transform: scale(1.05);
+}
+    
+        a:hover {
+            background-color: #18C9FA;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        a{
+            text-align: center;
+            color: black;
+            padding: 0%;
+            shape-margin: 0cap;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .circle-image{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%; 
+            object-fit: cover; 
+             border: 3px solid #333;
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .footer {
+            position: fixed;
+            padding:10px 0;
+            color: rgb(14, 13, 13);
+            text-align: center;
+            padding: 10px 0;
+            position: bottom;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            transform: translateX(-50%);
+            left: 89%;  
+        }
+        .footer-container {
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+ 
+    padding: 10px 20px; 
+
+}
+
+.footer-left, .footer-right {
+    width: 45%;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+/* Shared Styles from previous */
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.event-card {
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Event Detail Page */
+.event-detail {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+    </style>
+
+     
+      
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About us </a>
+        <a href="theteam.html">The team </a>
+        <a href="event.html">Event</a>
+        <a href="ArtistProfile.html">Artists Profile </a>
+        <a href="contractus.html">Contract Us </a>
+    </nav>
+    
+    <!-- Event Section -->
+    <section class="event-section">
+        <h1>Upcoming Events</h1>
+        <div class="event-container">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <a href="event-details1.html">
+                    <img src="BACKSTAGE PICTURES/events/zee's event.png" alt="Music Fiesta" class="event-image">
+                </a>
+                <h2>Music Fiesta 2025</h2>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card">
+                <a href="event-details2.html">
+                    <img src="BACKSTAGE PICTURES/events/momo's event.png" alt="Music Fiesta" class="event-image">
+                </a>
+                <h2>Art & Soul Festival</h2>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card">
+                <a href="event-details3.html">
+                    <img src="BACKSTAGE PICTURES/events/jazii's event.png" alt="Music Fiesta" class="event-image">
+                </a>
+                <h2>Music Fiesta</h2>
+            </div>
+        </div>
+    </section>
+<div class="footer-container">
+    <p class="footer-left">
+    51 Anso Road
+    <br>
+    Montana
+    <br>
+    Pretoria
+    <br>
+    Gauteng 0159
+</p>
+
+     <p class="footer-right"> Contract: 
+    <br>
+    Email:
+    <br>
+    Legal Team:
+    <br>
+    FAQ'S
+
+</p>
+</div>
+
+<div class="footer">
+    <p>&copy; Khumalo Valueable(Pty)Ltd 2025</p>
+</div>
+</html>

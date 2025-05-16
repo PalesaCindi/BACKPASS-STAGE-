@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+         display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+        background: url(BACKSTAGE\ PICTURES/club.jpg) no-repeat;
+        min-height: 100vb;
+        background-size: cover;
+        background-position: center;
+        }
+        .signup-container {
+            background: blur;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(236, 235, 235, 0.2);
+            width: 550px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .signup-container:hover {
+            transform: scale(1.05);
+        }
+        .signup-container h2 {
+            margin-bottom: 20px;
+            color: #ff416c;
+        }
+        .signup-container input,
+        .signup-container select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .signup-container input:focus {
+            border-color: #585757;
+            outline: none;
+        }
+        .signup-container button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #ff4b2b, #0437c4);
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 19px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .signup-container button:hover {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Create an Account</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <select required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="stakeholder">Stakeholder</option>
+                <option value="manager">Manager</option>
+                <option value="user">User</option>
+            </select>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+            <br>
+            <br>
+           
+        </form>
+    </div>
+</body>
+</html>
